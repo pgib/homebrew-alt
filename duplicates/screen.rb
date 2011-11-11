@@ -9,10 +9,10 @@ class Screen < Formula
   md5 '8506fd205028a96c741e4037de6e3c42'
   version '4.00.03'
 
-  head 'git://git.savannah.gnu.org/screen.git', :branch => 'master'
+  head 'git://github.com/pgib/screen.git', :branch => 'master'
 
   def patches
-    "https://raw.github.com/gist/1358618/937ca9f4ddb19e6b2910588b38def18f5b6ea00d/screen-lion-roar.patch"
+    "http://trac.macports.org/raw-attachment/ticket/20862/screen-4.0.3-snowleopard.patch"
   end unless ARGV.build_head?
 
   def install
