@@ -12,7 +12,7 @@ class Screen < Formula
   head 'git://git.savannah.gnu.org/screen.git', :branch => 'master'
 
   def patches
-    "http://trac.macports.org/raw-attachment/ticket/20862/screen-4.0.3-snowleopard.patch"
+    [ "http://trac.macports.org/raw-attachment/ticket/20862/screen-4.0.3-snowleopard.patch", "https://raw.github.com/gist/1358618/85044fa268b96ced305d1a77447f9225204119f2/hardstatus_256_colour.diff" ]
   end unless ARGV.build_head?
 
   def install
