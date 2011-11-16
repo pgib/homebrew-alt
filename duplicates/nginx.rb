@@ -35,7 +35,7 @@ class Nginx < Formula
 
     if !File.directory?(upload_module_path)
       puts "Unable to install the nginx-upload-module because #{upload_module_path} was not found. Please run:"
-      puts "mkdir -p /usr/local/src && cd /usr/local/src && git clone https://github.com/vkholodkov/nginx-upload-module.git"
+      puts "mkdir -p /usr/local/src && cd /usr/local/src && git clone https://github.com/vkholodkov/nginx-upload-module.git && cd nginx-upload-module && git checkout 2.2"
       exit
     end
 
